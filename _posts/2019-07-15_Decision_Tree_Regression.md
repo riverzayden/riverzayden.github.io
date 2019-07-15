@@ -2,13 +2,13 @@
 
 layout: post
 
-title:  "test"
+title:  "[ML] Decision Tree Regression"
 
-subtitle:   "test"
+subtitle:   "[ML] Decision Tree Regression"
 
 categories: ml
 
-tags: ml regression decision
+tags: ml regression decision tree
 
 comments: true
 
@@ -27,10 +27,11 @@ img:
   * 자식 노드 나누기를 연속적으로 적용하면 노드가 계속 증가하는 나무(tree)와 같은 형태
   
 * example
-  * ![1563155317500](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_2.PNG)
-  * ![1563155317500](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_3.PNG)
+  * ![1563155317500](/assets/img/machine_learning/Decision_Tree_Regression_image_2.PNG)
+  * ![1563155317500](/assets/img/machine_learning/Decision_Tree_Regression_image_3.PNG)
 
-* 
+
+
 
 * Python Code ( Housing Dataset)
 
@@ -53,7 +54,7 @@ img:
   df.head()
   ```
 
-![Decision Tree Regression_image_4](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_4.PNG)
+![Decision Tree Regression_image_4](/assets/img/machine_learning/Decision_Tree_Regression_image_4.PNG)
 
 ```python
 
@@ -84,7 +85,7 @@ print("Predicted value of client's home: {0:.2f}".format(pred_house_price), "(No
 
 ```
 
-![Decision Tree Regression_image_5](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_5.PNG)
+![Decision Tree Regression_image_5](/assets/img/machine_learning/Decision_Tree_Regression_image_5.PNG)
 
 
 
@@ -110,7 +111,7 @@ for i, col in enumerate(data.columns):
 
 
 
-![Decision Tree Regression_image_6](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_6.PNG)
+![Decision Tree Regression_image_6](/assets/img/machine_learning/Decision_Tree_Regression_image_6.PNG)
 
 ```python
 #print(data.head()) keep 'RM', 'LSTAT', 'PTRATIO'
@@ -124,7 +125,7 @@ print()
 
 ```
 
-![Decision Tree Regression_image_7](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_7.PNG)
+![Decision Tree Regression_image_7](/assets/img/machine_learning/Decision_Tree_Regression_image_7.PNG)
 
 
 
@@ -146,7 +147,7 @@ plt.plot(y_pred_f, 'o-', color="r", label="Predicted MEDV")
 plt.plot(y_test_f, 'o-', color="g", label="Actual MEDV")
 ```
 
-![Decision Tree Regression_image_8](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_8.PNG)
+![Decision Tree Regression_image_8](/assets/img/machine_learning/Decision_Tree_Regression_image_8.PNG)
 
 ```python
 export_graphviz(regression_f, out_file ='tree.dot') 
@@ -158,7 +159,7 @@ pydot_graph = pydotplus.graph_from_dot_file("tree.dot")
 Image(pydot_graph.create_png())
 ```
 
-![Decision Tree Regression_image_9](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_9.PNG)
+![Decision Tree Regression_image_9](/assets/img/machine_learning/Decision_Tree_Regression_image_9.PNG)
 
 
 
@@ -185,7 +186,7 @@ plt.legend()
 plt.show()
 ```
 
-![Decision Tree Regression_image_10](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Regression_image_10.PNG)
+![Decision Tree Regression_image_10](/assets/img/machine_learning/Decision_Tree_Regression_image_10.PNG)
 
 
 
