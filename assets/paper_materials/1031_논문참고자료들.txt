@@ -1,0 +1,9 @@
+https://www.evernote.com/shard/s156/sh/86db4277-e2ac-4fa9-a12c-d2ab5aca1c65/faa1cfa40047e57f
+
+file:///C:/Users/jdwdu/Downloads/YOLO9000_taewan2.pdf
+
+http://dhhwang89.tistory.com/138 (상당히 도움이 많이 되는데?
+(mAP 에 관한 근거는 논문에 저자의 말이 있는지 살펴봐야겠다.)
+
+https://medium.com/@ManishChablani/focal-loss-for-dense-object-detection-paper-summary-79a030798e42
+이거는 리뷰한 사람이 아무도 없네, 인터넷 잘 뒤지면서 찾아보아야겠다.

@@ -1,0 +1,35 @@
+<header class="main-header">
+  <div class="header-wrapper">
+    <div class="header-flex">
+      <h1 class="logo"><a href="{{site.baseurl}}/" title="홈 화면">{{ site.title }}</a></h1>
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <h2 class="nav-heading-invisible">네비게이션</h2>
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul class="nav-lists">
+          {% for category in site.data.navigation %}
+            {% if category.subs %}
+              <li class="nav-list nav-sup-list">
+                <span class="nav-sup-title">{{category.title}}</span>
+                <ul class="nav-sub-lists">
+                  {% for sub in category.subs %}
+                    <li class="nav-sub-list"><a href="{{sub.url}}" title="{{sub.desc}}" class="nav-sub-list__link">{{sub.title}}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="nav-list">
+                <a href="{{site.baseurl}}{{category.url}}" title="{{category.desc}}" class="nav-list__link">{{category.title}}</a>
+              </li>
+            {% endif %}
+          {% endfor %} 
+        </ul>
+      </nav>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->

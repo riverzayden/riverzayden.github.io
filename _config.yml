@@ -1,0 +1,54 @@
+﻿title: Data Science
+email: riverzayden@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  RiverZayden's blog
+permalink: '/:categories/:title/' # default '/:title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://riverzayden.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# copy right url:                 https://chayeoi.com
+# Author settings
+author: RiverZayden # add your name
+author-pic: startup-logo.jpg
+about-author: AI Data Scientist 
+
+# Contact links
+email: riverzayden@gmail.com # Add your Email address
+phone: 010-0000-0000 # Add your Phone number
+#website:  # Add your website, do not add http://
+#repo: #
+# linkedin: # Add your Linkedin handle
+github: riverzayden # Add your Github handle
+# twitter: '@artemsheludko_' # Add your Twitter handle
+facebook: riverzayden # Add your Facebook handle
+#instagram:  # Add your Instagram handle ,  # 인스타 나중
+# pinterest: # Add your Pinterest handle
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier.
+
+# Disqus
+disqus_identifier: riverzayden-2 # Add your discus identifier (short name)
+
+# Tracker
+analytics: UA-92346434-1 # Google Analytics
+
+# # Paginate
+# paginate: 6
+# paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+#Open the "_sass > base", open "_variables.scss"
+google_fonts: "Nanum+Gothic:400,700"
+
+css:
+  +  - /assets/css/syntax.css

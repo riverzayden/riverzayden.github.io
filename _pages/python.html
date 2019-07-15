@@ -1,0 +1,11 @@
+---
+layout: home-page
+title: Python
+permalink: /python/
+---
+<h2 class="pages-heading">{{page.title}}</h2>
+<ol class="post-card-box clearfix">
+  {% for post in site.categories.python %}
+    {% include pages.html %}
+  {% endfor %}
+</ol>

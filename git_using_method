@@ -1,0 +1,10 @@
+git init
+
+git add README.md
+git commit -m "first commit"
+
+git remote add origin https://github.com/riverzayden/riverzayden.github.io.git
+git push -u origin master
+
+## remote에러 발생시
+git remote rm origin

@@ -1,0 +1,210 @@
+@import "variables";
+@import "syntax";
+@import "tools/normalize";
+@import "fonts/source-code-pro/source-code-pro";
+@import "fonts/spoqa-han-sans/spoqa-han-sans";
+@import "fonts/fontello/fontello";
+
+/* a11y */
+
+[class$="invisible"] {
+  display: none;
+}
+
+/* = = = = = = = = = = Main Styles = = = = = = = = = = */
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  line-height: 2;
+}
+
+body {
+  font-family: 'Spoqa Han Sans', 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: $dark-gray;
+  margin: 0;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 30px;
+  font-family: 'Spoqa Han Sans', 'Lato', sans-serif;
+  color: $dark-purple;
+  font-weight: 700;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+p > img {
+  margin: 50px auto;
+}
+
+a {
+  color: $dark-pink;
+}
+
+blockquote {
+  border-left: 3px solid $lighten-red;
+  margin: 16px 0 16px 21px;
+  padding: 5px 18px;
+  font-style: italic;
+  color: $dark-purple;
+  background-color: #fdfdfd;
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6, {
+  padding-top: 0;
+}
+
+pre {
+  padding: 16px 32px;
+  white-space: pre-wrap;
+  word-wrap: normal;
+  word-break: break-all;
+
+  code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+/* Table */
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: #fafafa;
+  font-weight: 100;
+  width: 100%;
+}
+
+th {
+  padding: 0.5em 1em;
+  border: 2px solid #fff;
+  background-color: #eee;
+}
+
+td {
+  padding: 0.5em 1em;
+  border: 1px solid #fff;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: transform .4s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+}
+
+.flex-container.active {
+  transform: translate3d(300px, 0, 0);
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.header-wrapper {
+  width: 960px;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper {
+  width: 960px;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+::-moz-selection {
+  background: rgba(49, 30, 62, 0.7);
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(49, 30, 62, 0.7);
+  color: #ffffff;
+}
+
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix::before {
+  clear: both;
+}
+
+/* = = = = = = = = = = Header Styles = = = = = = = = = = */
+@import "parts/header";
+
+/* = = = = = = = = = = Search Styles = = = = = = = = = = */
+@import "parts/search";
+
+/* = = = = = = = = = = Post-Card Styles = = = = = = = = = = */
+@import "parts/post-card";
+
+/* = = = = = = = = = = Pagination Styles = = = = = = = = = = */
+@import "parts/pagination";
+
+
+/* = = = = = = = = = = Footer Styles = = = = = = = = = = */
+@import "parts/footer";
+
+/* = = = = = = = = = = Post-Page Styles = = = = = = = = = = */
+@import "parts/post-page";
+
+/* = = = = = = = = = = Author Box Styles = = = = = = = = = = */
+@import "parts/author-box";
+
+/* = = = = = = = = = = About Page Styles = = = = = = = = = = */
+@import "parts/about";
+
+/* = = = = = = = = = = About Page Styles = = = = = = = = = = */
+@import "parts/pages";
+
+/* = = = = = = = = = = Tags Styles = = = = = = = = = = */
+@import "parts/tags";
+
+/* = = = = = = = = = = Animate Styles = = = = = = = = = = */
+@import "parts/animate";
+
+/* = = = = = = = = = = Media = = = = = = = = = = */
+@import "media"

@@ -1,0 +1,43 @@
+- title: Home
+  url: /
+  desc: Home
+- title : AI Study
+  desc: AI Study
+  subs:
+    -
+      title: Python
+      url: /python
+      desc: Related python 
+    -
+      title: Image Deep Learning 
+      url: /image_dl
+      desc: Related Image Deep Learning 
+    -
+      title: NLP Deep Learning
+      url: /nlp_dl
+      desc: Related NLP deep Learning
+    -
+      title: Machine Learning
+      url: /ml
+      desc: Related ml
+    -
+      title: Paper
+      url: /paper
+      desc: Related Paper Review
+    -
+      title: ETC
+      url: /etc
+      desc: etc
+
+- title: Daily
+  url: /daily
+  desc: Daily log
+- title: Tech
+  url: /tech
+  desc: another techs
+- title: Tags
+  url: /tags
+  desc: Tags
+- title: About
+  url: /about
+  desc: About me
