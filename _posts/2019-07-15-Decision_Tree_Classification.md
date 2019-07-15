@@ -201,7 +201,7 @@ from sklearn.metrics import classification_report
 print(classification_report(y_train, model.predict(X_train)))
 ```
 
-![Decision Tree Classification_image_13](/assets/img/machine_learning/Decision_Tree_Classification_image.PNG)
+![Decision Tree Classification_image_13](/assets/img/machine_learning/Decision_Tree_Classification_image_13.PNG)
 
 ```python 
 print(classification_report(y_test, model.predict(X_test)))
