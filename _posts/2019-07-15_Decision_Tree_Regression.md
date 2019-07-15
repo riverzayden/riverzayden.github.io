@@ -18,7 +18,7 @@ img:
 
 #### Decision Tree Regression 
 
-![1563155317500](/assets/img/machine_learning/Decision Tree Regression_image_1.PNG)
+![1563155317500](/assets/machine_learning/Decision Tree Regression_image_1.PNG)
 
 * 정의 
   * **의사 결정 나무(decision tree)**는 여러 가지 규칙을 순차적으로 적용하면서 독립 변수 공간을 분할하는 분류 모형이다. 분류(classification)와 회귀 분석(regression)에 모두 사용될 수 있기 때문에 **CART(Classification And Regression Tree)**라고도 한다.
