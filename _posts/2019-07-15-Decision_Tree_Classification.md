@@ -21,7 +21,7 @@ img:
 #### Decision Tree Classification
 
 * 정의
-  - 참조 : Decision Tree Regression
+  - 참조 : [Decision Tree Regression](/_posts/2019-07-15_Decision_Tree_Regression.md)
 
 
 
