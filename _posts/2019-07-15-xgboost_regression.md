@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title:  "[ML] XGBoost Regression "
+
+subtitle:   "[ML] XGBoost Regression "
+
+categories: ml
+
+tags: ml xgb boosting regression
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### XGBoost Regression
 
 
@@ -61,20 +81,20 @@ print(len(X_train), len(X_test))
 xgb_model.fit(X_train,y_train)
 ```
 
-![xgboost_regression_image_1](D:\HBEE회사\python자료\정리본\md_image\xgboost_regression_image_1.PNG)
+![xgboost_regression_image_1](/assets/img/machine_learning/xgboost_regression_image_1.PNG)
 
 ```python
 xgboost.plot_importance(xgb_model)
 ```
 
-![xgboost_regression_image_2](D:\HBEE회사\python자료\정리본\md_image\xgboost_regression_image_2.PNG)
+![xgboost_regression_image_2](/assets/img/machine_learning/xgboost_regression_image_2.PNG)
 
 ```python
 predictions = xgb_model.predict(X_test)
 predictions
 ```
 
-![xgboost_regression_image_3](D:\HBEE회사\python자료\정리본\md_image\xgboost_regression_image_3.PNG)
+![xgboost_regression_image_3](/assets/img/machine_learning/xgboost_regression_image_3.PNG)
 
 ```python
 r_sq = xgb_model.score(X_train, y_train)
@@ -82,7 +102,7 @@ print(r_sq)
 print(explained_variance_score(predictions,y_test))
 ```
 
-![xgboost_regression_image_4](D:\HBEE회사\python자료\정리본\md_image\xgboost_regression_image_4.PNG)
+![xgboost_regression_image_4](/assets/img/machine_learning/xgboost_regression_image_4.PNG)
 
 
 

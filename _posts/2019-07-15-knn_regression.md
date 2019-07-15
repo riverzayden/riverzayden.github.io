@@ -1,6 +1,26 @@
+---
+
+layout: post
+
+title:  "[ML] KNN(K-nearest neighbors) Regression "
+
+subtitle:   "[ML] KNN(K-nearest neighbors) Regression "
+
+categories: ml
+
+tags: ml neighbors k-nearest regression
+
+comments: true
+
+img: 
+
+---
 
 
-#### KNN Regression
+
+
+
+#### KNN(K-nearest neighbors) Regression
 
 
 
@@ -14,11 +34,11 @@
 
   
 
-  ![knn_regression_image_1](D:\HBEE회사\python자료\정리본\md_image\knn_regression_image_1.PNG)
+  ![knn_regression_image_1](/assets/img/machine_learning/knn_regression_image_1.PNG)
 
   * 선택된 점은 6, 5, 1번점이 선택되었고, 13Predict =  (77+72+60)/3 = 69.66
 
-  ![knn_regression_image_2](D:\HBEE회사\python자료\정리본\md_image\knn_regression_image_2.PNG)
+  ![knn_regression_image_2](/assets/img/machine_learning/knn_regression_image_2.PNG)
 
 
 
@@ -29,11 +49,11 @@
 1. **Euclidean Distance:** Euclidean distance is calculated as the square root of the sum of the squared differences between a new point (x) and an existing point (y).
 2. **Manhattan Distance** : This is the distance between real vectors using the sum of their absolute difference.
 
-![knn_regression_image_3](D:\HBEE회사\python자료\정리본\md_image\knn_regression_image_3.PNG)
+![knn_regression_image_3](/assets/img/machine_learning/knn_regression_image_3.PNG)
 
 1. **Hamming Distance**: It is used for categorical variables. If the value (x) and the value (y) are same, the distance D will be equal to 0 . Otherwise D=1.
 
-![knn_regression_image_4](D:\HBEE회사\python자료\정리본\md_image\knn_regression_image_4.PNG)
+![knn_regression_image_4](/assets/img/machine_learning/knn_regression_image_4.PNG)
 
 
 
@@ -67,7 +87,7 @@ for K in range(20):
     print('RMSE value for k= ' , K , 'is:', error)
 ```
 
-![knn_regression_image_5](D:\HBEE회사\python자료\정리본\md_image\knn_regression_image_5.PNG)
+![knn_regression_image_5](/assets/img/machine_learning/knn_regression_image_5.PNG)
 
 
 
@@ -77,7 +97,7 @@ curve = pd.DataFrame(rmse_val) #elbow curve
 curve.plot()
 ```
 
-![knn_regression_image_6](D:\HBEE회사\python자료\정리본\md_image\knn_regression_image_6.PNG)
+![knn_regression_image_6](/assets/img/machine_learning/knn_regression_image_6.PNG)
 
 
 

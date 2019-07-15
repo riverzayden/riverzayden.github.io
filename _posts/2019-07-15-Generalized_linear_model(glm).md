@@ -1,4 +1,24 @@
-#### Generalized linear Model ( GLM)
+---
+
+layout: post
+
+title:  "[ML] Generalized linear Model ( GLM ) "
+
+subtitle:   "[ML] Generalized linear Model ( GLM ) "
+
+categories: ml
+
+tags: ml GLM linear regression
+
+comments: true
+
+img: 
+
+---
+
+
+
+#### Generalized linear Model ( GLM )
 
 * 정의
   - 종속변수가 정규분포하지 않는 경우를 포함하는 선형모형의 확장 
@@ -28,7 +48,7 @@ print(data.exog.shape)
 print(data.exog[0])
 ```
 
-![Generalized_linear_model_image_1](D:\HBEE회사\python자료\정리본\md_image\Generalized_linear_model_image_1.PNG)
+![Generalized_linear_model_image_1](/assets/img/machine_learning/Generalized_linear_model_image_1.PNG)
 
 ```python
 gamma_model = sm.GLM(data.endog, data.exog, family=sm.families.Gamma(link=sm.genmod.families.links.log))
@@ -36,7 +56,7 @@ gamma_results = gamma_model.fit()
 print(gamma_results.summary())
 ```
 
-![Generalized_linear_model_image_2](D:\HBEE회사\python자료\정리본\md_image\Generalized_linear_model_image_2.PNG)
+![Generalized_linear_model_image_2](/assets/img/machine_learning/Generalized_linear_model_image_2.PNG)
 
 
 

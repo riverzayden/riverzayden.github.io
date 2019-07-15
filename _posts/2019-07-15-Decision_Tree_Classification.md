@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title:  "[ML] Decision Tree Classification "
+
+subtitle:   "[ML] Decision Tree Classification "
+
+categories: ml
+
+tags: ml decision tree classification 
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### Decision Tree Classification
 
 * 정의
@@ -28,7 +48,7 @@ tree1 = DecisionTreeClassifier(criterion='entropy', max_depth=1, random_state=0)
 pd.DataFrame(iris.data, columns=iris.feature_names).head()
 ```
 
-![Decision Tree Classification_image_1](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_1.PNG)
+![Decision Tree Classification_image_1](/assets/img/machine_learning/Decision_Tree_Classification_image_1.PNG)
 
 ```python
 
@@ -73,7 +93,7 @@ def plot_decision_regions(X, y, model, title):
 draw_decision_tree(tree1)
 ```
 
-![Decision Tree Classification_image_2](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_2.PNG)
+![Decision Tree Classification_image_2](/assets/img/machine_learning/Decision_Tree_Classification_image_2.PNG)
 
 ```python
 plot_decision_regions(X, y, tree1, "Depth 1")
@@ -81,7 +101,7 @@ plt.show()
 confusion_matrix(y, tree1.predict(X))
 ```
 
-![Decision Tree Classification_image_3](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_3.PNG)
+![Decision Tree Classification_image_3](/assets/img/machine_learning/Decision_Tree_Classification_image_3.PNG)
 
 ```python
 tree5 = DecisionTreeClassifier(
@@ -89,7 +109,7 @@ tree5 = DecisionTreeClassifier(
 draw_decision_tree(tree5)
 ```
 
-![Decision Tree Classification_image_4](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_4.PNG)
+![Decision Tree Classification_image_4](/assets/img/machine_learning/Decision_Tree_Classification_image_4.PNG)
 
 ```python
 plot_decision_regions(X, y, tree5, "Depth 5")
@@ -97,7 +117,7 @@ plt.show()
 confusion_matrix(y, tree5.predict(X))
 ```
 
-![Decision Tree Classification_image_5](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_5.PNG)
+![Decision Tree Classification_image_5](/assets/img/machine_learning/Decision_Tree_Classification_image_5.PNG)
 
 
 
@@ -108,7 +128,7 @@ df = sns.load_dataset("titanic")
 df.head()
 ```
 
-![Decision Tree Classification_image_6](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_6.PNG)
+![Decision Tree Classification_image_6](/assets/img/machine_learning/Decision_Tree_Classification_image_6.PNG)
 
 
 
@@ -119,7 +139,7 @@ dfy = df["survived"].copy()
 dfX.tail()
 ```
 
-![Decision Tree Classification_image_7](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_7.PNG)
+![Decision Tree Classification_image_7](/assets/img/machine_learning/Decision_Tree_Classification_image_7.PNG)
 
 ```python
 from sklearn.preprocessing import LabelEncoder
@@ -129,7 +149,7 @@ dfX["age"].fillna(dfX["age"].mean(), inplace=True)
 dfX.tail()
 ```
 
-![Decision Tree Classification_image_8](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_8.PNG)
+![Decision Tree Classification_image_8](/assets/img/machine_learning/Decision_Tree_Classification_image_8.PNG)
 
 ```python
 from sklearn.preprocessing import LabelBinarizer
@@ -141,7 +161,7 @@ del(dfX["pclass"])
 dfX.tail()
 ```
 
-![Decision Tree Classification_image_9](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_9.PNG)
+![Decision Tree Classification_image_9](/assets/img/machine_learning/Decision_Tree_Classification_image_9.PNG)
 
 ```python
 from sklearn.model_selection import train_test_split
@@ -153,7 +173,7 @@ model = DecisionTreeClassifier(
     criterion='entropy', max_depth=3, min_samples_leaf=5).fit(X_train, y_train)
 ```
 
-![Decision Tree Classification_image_10](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_10.PNG)
+![Decision Tree Classification_image_10](/assets/img/machine_learning/Decision_Tree_Classification_image_10.PNG)
 
 ```python
 command_buf = io.StringIO()
@@ -164,7 +184,7 @@ image = graph.create_png()
 Image(image)
 ```
 
-![Decision Tree Classification_image_11](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_11.PNG)
+![Decision Tree Classification_image_11](/assets/img/machine_learning/Decision_Tree_Classification_image_11.PNG)
 
 ```python
 print('train==>')
@@ -173,7 +193,7 @@ print('test==>')
 print(confusion_matrix(y_test, model.predict(X_test)))
 ```
 
-![Decision Tree Classification_image_12](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_12.PNG)
+![Decision Tree Classification_image_12](/assets/img/machine_learning/Decision_Tree_Classification_image_12.PNG)
 
 ```python
 from sklearn.metrics import classification_report
@@ -181,13 +201,13 @@ from sklearn.metrics import classification_report
 print(classification_report(y_train, model.predict(X_train)))
 ```
 
-![Decision Tree Classification_image_13](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_13.PNG)
+![Decision Tree Classification_image_13](/assets/img/machine_learning/Decision_Tree_Classification_image.PNG)
 
 ```python 
 print(classification_report(y_test, model.predict(X_test)))
 ```
 
-![Decision Tree Classification_image_14](D:\HBEE회사\python자료\정리본\md_image\Decision Tree Classification_image_14.PNG)
+![Decision Tree Classification_image_14](/assets/img/machine_learning/Decision_Tree_Classification_image_14.PNG)
 
 
 

@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title:  "[ML] Bagging and Boosting "
+
+subtitle:   "[ML] Bagging and Boosting "
+
+categories: ml
+
+tags: ml bagging boosting
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### Bagging과 Boosting 
 
 
@@ -15,7 +35,7 @@
 
    - 여러번 샘플을 뽑아서 각 모델을 학습시켜 결과 집계하는 방법
 
-   ![bagging_boosting_image_1](D:\HBEE회사\python자료\정리본\md_image\bagging_boosting_image_1.PNG)
+   ![bagging_boosting_image_1](/assets/img/machine_learning/bagging_boosting_image_1.PNG)
 
    - 이렇게 하는 이유 : 알고리즘의 안정성과 정확성을 향상시키기 위해서
 
@@ -26,7 +46,7 @@
 
    - 대표적으로 Random Forest방법 
 
-     ![bagging_boosting_image_2](D:\HBEE회사\python자료\정리본\md_image\bagging_boosting_image_2.PNG)
+     ![bagging_boosting_image_2](/assets/img/machine_learning/bagging_boosting_image_2.PNG)
 
 2. Boosting
    - bagging이 일반적인 모델을 만드는데 집중한 반면에, Boosting은 맞추기 어려운 문제를 맞추는데 초점을 두고 있다.
@@ -34,7 +54,7 @@
    - bagging은 병렬로 학습, boosting은 순차적으로 학습 ( 가중치 재분배를 위해서 )
    - 대표적인 모델로는 AdaBoost, XGboost, GradientBoost
 
-![bagging_boosting_image_3](D:\HBEE회사\python자료\정리본\md_image\bagging_boosting_image_3.PNG)
+![bagging_boosting_image_3](/assets/img/machine_learning/bagging_boosting_image_3.PNG)
 
 
 

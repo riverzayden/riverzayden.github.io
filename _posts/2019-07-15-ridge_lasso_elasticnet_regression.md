@@ -1,8 +1,26 @@
+---
+
+layout: post
+
+title:  "[ML] Regularization method - Regression  "
+
+subtitle:   "[ML] Regularization method - Regression  "
+
+categories: ml
+
+tags: ml regularization regression ridge lasso elastic_net
+
+comments: true
+
+img: 
+
+---
 
 
 
 
-### 정규화의 기법 - Regression 
+
+### Regularization method - Regression 
 
 #### Ridge Regression
 
@@ -12,7 +30,7 @@
 
   * Ridge 회귀모형에서는 가중치들의 제곱합(squared sum of weights)을 최소화하는 것을 추가적인 제약 조건으로 한다.
 
-    ![ridge_lasso_elasticnet_image_1](D:\HBEE회사\python자료\정리본\md_image\ridge_lasso_elasticnet_image_1.PNG)
+    ![ridge_lasso_elasticnet_image_1](/assets/img/machine_learning/ridge_lasso_elasticnet_image_1.PNG)
 
   * λ는 기존의 잔차 제곱합과 추가적 제약 조건의 비중을 조절하기 위한 하이퍼 모수(hyper parameter)이다. λ가 크면 정규화 정도가 커지고 가중치의 값들이 작아진다. λ가 작아지면 정규화 정도가 작아지며 λ 가 0이 되면 일반적인 선형 회귀모형이 된다.
 
@@ -45,7 +63,7 @@ print(ridge_reg.best_params_)
 print(ridge_reg.best_score_)
 ```
 
-![ridge_lasso_elasticnet_image_4](D:\HBEE회사\python자료\정리본\md_image\ridge_lasso_elasticnet_image_4.PNG)
+![ridge_lasso_elasticnet_image_4](/assets/img/machine_learning/ridge_lasso_elasticnet_image_4.PNG)
 
 
 
@@ -57,7 +75,7 @@ print(ridge_reg.best_score_)
 
   * Lasso(Least Absolute Shrinkage and Selection Operator) 회귀모형은 가중치의 절대값의 합을 최소화하는 것을 추가적인 제약 조건으로 한다.
 
-  ![ridge_lasso_elasticnet_image_2](D:\HBEE회사\python자료\정리본\md_image\ridge_lasso_elasticnet_image_2.PNG)
+  ![ridge_lasso_elasticnet_image_2](/assets/img/machine_learning/ridge_lasso_elasticnet_image_2.PNG)
 
 * python Example
 
@@ -90,7 +108,7 @@ plt.legend()
 plt.show()
 ```
 
-![ridge_lasso_elasticnet_image_5](D:\HBEE회사\python자료\정리본\md_image\ridge_lasso_elasticnet_image_5.PNG)
+![ridge_lasso_elasticnet_image_5](/assets/img/machine_learning/ridge_lasso_elasticnet_image_5.PNG)
 
 ```python
 
@@ -104,7 +122,7 @@ print(lasso_reg.best_params_)
 print(lasso_reg.best_score_)
 ```
 
-![ridge_lasso_elasticnet_image_6](D:\HBEE회사\python자료\정리본\md_image\ridge_lasso_elasticnet_image_6.PNG)
+![ridge_lasso_elasticnet_image_6](/assets/img/machine_learning/ridge_lasso_elasticnet_image_6.PNG)
 
 
 
@@ -126,7 +144,7 @@ print(elasticnet_reg.best_params_)
 print(elasticnet_reg.best_score_)
 ```
 
-![ridge_lasso_elasticnet_image_7](D:\HBEE회사\python자료\정리본\md_image\ridge_lasso_elasticnet_image_7.PNG)
+![ridge_lasso_elasticnet_image_7](/assets/img/machine_learning/ridge_lasso_elasticnet_image_7.PNG)
 
 
 

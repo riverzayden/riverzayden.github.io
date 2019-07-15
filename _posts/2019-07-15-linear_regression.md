@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title:  "[ML] Linear Regression  "
+
+subtitle:   "[ML] Linear Regression  "
+
+categories: ml
+
+tags: ml linear regression
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### Linear Regression 
 
 * 정의
@@ -6,7 +26,7 @@
 
   * 만약 독립 변수 x와 이에 대응하는 종속 변수 y간의 관계가 다음과 같은 선형 함수 f(x)이면 **선형 회귀분석(linear regression analysis)**이라고 한다.
 
-    ![linear_regression_image_1](D:\HBEE회사\python자료\정리본\md_image\linear_regression_image_1.PNG)
+    ![linear_regression_image_1](/assets/img/machine_learning/linear_regression_image_1.PNG)
 
 * Python Example 
 
@@ -19,7 +39,7 @@ model_boston = LinearRegression(fit_intercept=True).fit(boston.data, boston.targ
 model_boston
 ```
 
-![linear_regression_image_2](D:\HBEE회사\python자료\정리본\md_image\linear_regression_image_2.PNG)
+![linear_regression_image_2](/assets/img/machine_learning/linear_regression_image_2.PNG)
 
 ```python
 print('slope:', model_boston.coef_)
@@ -29,7 +49,7 @@ r_sq = model_boston.score(boston.data, boston.target)
 print('coefficient of determination:', r_sq)
 ```
 
-![linear_regression_image_3](D:\HBEE회사\python자료\정리본\md_image\linear_regression_image_3.PNG)
+![linear_regression_image_3](/assets/img/machine_learning/linear_regression_image_3.PNG)
 
 ```python
 import matplotlib.pyplot as plt
@@ -42,7 +62,7 @@ plt.title("")
 plt.show()
 ```
 
-![linear_regression_image_4](D:\HBEE회사\python자료\정리본\md_image\linear_regression_image_4.PNG)
+![linear_regression_image_4](/assets/img/machine_learning/linear_regression_image_4.PNG)
 
 ```python
 import numpy as np
@@ -53,7 +73,7 @@ stats_model = stats_model.fit()
 print(stats_model.summary())
 ```
 
-![linear_regression_image_5](D:\HBEE회사\python자료\정리본\md_image\linear_regression_image_5.PNG)
+![linear_regression_image_5](/assets/img/machine_learning/linear_regression_image_5.PNG)
 
 ```python
 print('coefficient of determination:', stats_model.rsquared)
@@ -62,7 +82,7 @@ print('regression coefficients:', stats_model.params)
 
 ```
 
-![linear_regression_image_6](D:\HBEE회사\python자료\정리본\md_image\linear_regression_image_6.PNG)
+![linear_regression_image_6](/assets/img/machine_learning/linear_regression_image_6.PNG)
 
 ## 참고 자료 
 

@@ -1,10 +1,30 @@
+---
+
+layout: post
+
+title:  "[ML] Random Forest Regression "
+
+subtitle:   "[ML] Random Forest Regression "
+
+categories: ml
+
+tags: ml random forest regression
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### Random Forest Regression
 
 * 정의
 
   랜덤 포래스트는 앙상블 기법 중 하나이다. 
 
-![random_forest_regression_image_1](D:\HBEE회사\python자료\정리본\md_image\random_forest_regression_image_1.PNG)
+![random_forest_regression_image_1](/assets/img/machine_learning/random_forest_regression_image_1.PNG)
 
 
 
@@ -26,7 +46,7 @@ print(df.columns)
 df.head()
 ```
 
-![random_forest_regression_image_2](D:\HBEE회사\python자료\정리본\md_image\random_forest_regression_image_2.PNG)
+![random_forest_regression_image_2](/assets/img/machine_learning/random_forest_regression_image_2.PNG)
 
 ```python
 X = df.iloc[:,1:].to_numpy()
@@ -55,7 +75,7 @@ print("MSE")
 print(mseOos)
 ```
 
-![random_forest_regression_image_3](D:\HBEE회사\python자료\정리본\md_image\random_forest_regression_image_3.PNG)
+![random_forest_regression_image_3](/assets/img/machine_learning/random_forest_regression_image_3.PNG)
 
 ```python
 
@@ -79,7 +99,7 @@ plot.show()
 
 ```
 
-![random_forest_regression_image_4](D:\HBEE회사\python자료\정리본\md_image\random_forest_regression_image_4.PNG)
+![random_forest_regression_image_4](/assets/img/machine_learning/random_forest_regression_image_4.PNG)
 
 
 
@@ -104,7 +124,7 @@ plot.show()
 
 ```
 
-![random_forest_regression_image_5](D:\HBEE회사\python자료\정리본\md_image\random_forest_regression_image_5.PNG)
+![random_forest_regression_image_5](/assets/img/machine_learning/random_forest_regression_image_5.PNG)
 
 
 

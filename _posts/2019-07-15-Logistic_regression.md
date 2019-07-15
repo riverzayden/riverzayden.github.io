@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title:  "[ML] Logistic Regression  "
+
+subtitle:   "[ML] Logistic Regression  "
+
+categories: ml
+
+tags: ml Logistic Regression classification odds roc_curve
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### Logistic Regression 
 
 
@@ -7,7 +27,7 @@
   * 회귀분석이지면 분류성격을 갖고 있다. 
   * Regression이라해서 연속형 Y값을 예측하는 것 같지만, 범주형인 경우에 사용하는 분류 방법이다.
 
-  ![logistic_regression_image_1](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_1.PNG)
+  ![logistic_regression_image_1](/assets/img/machine_learning/logistic_regression_image_1.PNG)
 
   * 왼쪽 그림의 경우 Y가 0또는 1인 경우라면 선형회귀로는 fitting하기 힘들다. 따라서 곡선으로 fitting하기 위해 사용하는 것이 로지스틱함수(로짓변환)이다.
   * odds_ratio = p/(1-p)
@@ -30,7 +50,7 @@ df = sns.load_dataset("titanic")
 df.head()
 ```
 
-![logistic_regression_image_2](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_2.PNG)
+![logistic_regression_image_2](/assets/img/machine_learning/logistic_regression_image_2.PNG)
 
 ```python
 feature_names = ["pclass", "age", "sex"]
@@ -48,7 +68,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(dfX, dfy, test_size=0.3,)
 X_train.tail()
 ```
 
-![logistic_regression_image_3](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_3.PNG)
+![logistic_regression_image_3](/assets/img/machine_learning/logistic_regression_image_3.PNG)
 
 ```python
 log_clf = LogisticRegression()
@@ -58,7 +78,7 @@ log_clf.score(X_test, Y_test)
 
 ```
 
-![logistic_regression_image_4](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_4.PNG)
+![logistic_regression_image_4](/assets/img/machine_learning/logistic_regression_image_4.PNG)
 
 ```python
 feature_names = ["pclass", "age", "sex","class"]
@@ -73,7 +93,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(dfX, dfy, test_size=0.3)
 X_train.head()
 ```
 
-![logistic_regression_image_5](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_5.PNG)
+![logistic_regression_image_5](/assets/img/machine_learning/logistic_regression_image_5.PNG)
 
 ```python
 log_clf = LogisticRegression()
@@ -82,7 +102,7 @@ log_clf.score(X_test, Y_test)
 
 ```
 
-![logistic_regression_image_6](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_6.PNG)
+![logistic_regression_image_6](/assets/img/machine_learning/logistic_regression_image_6.PNG)
 
 ```python
 from sklearn.metrics import confusion_matrix, precision_recall_curve, roc_curve,log_loss,auc
@@ -116,7 +136,7 @@ print("Using a threshold of %.3f " % thr[idx] + "guarantees a sensitivity of %.3
       ", i.e. a false positive rate of %.2f%%." % (np.array(fpr[idx])*100))
 ```
 
-![logistic_regression_image_7](D:\HBEE회사\python자료\정리본\md_image\logistic_regression_image_7.PNG)
+![logistic_regression_image_7](/assets/img/machine_learning/logistic_regression_image_7.PNG)
 
 
 

@@ -1,3 +1,23 @@
+---
+
+layout: post
+
+title:  "[ML] SVM ( Support Vector Machine)  "
+
+subtitle:   "[ML] SVM ( Support Vector Machine)  "
+
+categories: ml
+
+tags: ml svm support vector classification
+
+comments: true
+
+img: 
+
+---
+
+
+
 #### SVM ( Support Vector Machine) 
 
 
@@ -9,7 +29,7 @@
   * 가장 최적의 의사 결정 경계는 모든 클래스의 가장 가까운 점으로부터 최대 마진을 갖는 결정 경계입니다. 
   * 결정 경계와 점 사이의 거리를 최대화하는 결정 경계로부터의 가장 가까운 점을 그림 2에서 보듯이 Support Vector 라고 부른다. Support Vector 의 결정 경계는 최대 마진 분류기 또는 최대 마진 하이퍼 평면이라고 불린다. 
 
-  ![svm_image_1](D:\HBEE회사\python자료\정리본\md_image\svm_image_1.PNG)
+  ![svm_image_1](/assets/img/machine_learning/svm_image_1.PNG)
 
   * python에서 svm kernel의 종류 ==> linear, poly(다항), rbf(가우시안), sigmoid(시그모이드)
 
@@ -41,7 +61,7 @@ print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))  
 ```
 
-![svm_image_2](D:\HBEE회사\python자료\정리본\md_image\svm_image_2.PNG)
+![svm_image_2](/assets/img/machine_learning/svm_image_2.PNG)
 
 ```python
 
@@ -54,7 +74,7 @@ print(classification_report(y_test, y_pred))
 
 ```
 
-![svm_image_3](D:\HBEE회사\python자료\정리본\md_image\svm_image_3.PNG)
+![svm_image_3](/assets/img/machine_learning/svm_image_3.PNG)
 
 ```python
 
@@ -66,7 +86,7 @@ print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))  
 ```
 
-![svm_image_4](D:\HBEE회사\python자료\정리본\md_image\svm_image_4.PNG)
+![svm_image_4](/assets/img/machine_learning/svm_image_4.PNG)
 
 
 
@@ -80,7 +100,7 @@ print(confusion_matrix(y_test, y_pred))
 print(classification_report(y_test, y_pred))  
 ```
 
-![svm_image_5](D:\HBEE회사\python자료\정리본\md_image\svm_image_5.PNG)
+![svm_image_5](/assets/img/machine_learning/svm_image_5.PNG)
 
 
 
