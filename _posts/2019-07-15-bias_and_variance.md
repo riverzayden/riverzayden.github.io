@@ -12,7 +12,7 @@ tags: ml bias variance overfitting underfitting
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

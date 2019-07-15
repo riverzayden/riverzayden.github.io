@@ -12,7 +12,7 @@ tags: ml bagging boosting
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

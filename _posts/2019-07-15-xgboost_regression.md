@@ -12,7 +12,7 @@ tags: ml xgb boosting regression
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

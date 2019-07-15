@@ -12,7 +12,7 @@ tags: ml regression decision tree
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

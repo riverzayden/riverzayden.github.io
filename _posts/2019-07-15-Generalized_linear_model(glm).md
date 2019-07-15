@@ -12,7 +12,7 @@ tags: ml GLM linear regression
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

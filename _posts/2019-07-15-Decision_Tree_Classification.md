@@ -12,7 +12,7 @@ tags: ml decision tree classification
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

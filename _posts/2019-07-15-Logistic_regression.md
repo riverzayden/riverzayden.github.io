@@ -12,7 +12,7 @@ tags: ml Logistic Regression classification odds roc_curve
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

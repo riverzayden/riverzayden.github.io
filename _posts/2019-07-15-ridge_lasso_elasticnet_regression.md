@@ -12,7 +12,7 @@ tags: ml regularization regression ridge lasso elastic_net
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

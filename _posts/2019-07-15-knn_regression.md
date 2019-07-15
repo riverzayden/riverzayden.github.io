@@ -12,7 +12,7 @@ tags: ml neighbors k-nearest regression
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 

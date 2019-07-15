@@ -12,7 +12,7 @@ tags: ml svm support vector classification
 
 comments: true
 
-img: 
+img: machine_learning.png
 
 ---
 
