@@ -1,3 +1,21 @@
+---
+layout: post
+
+title:  "[Python] Conda 설치 방법 "
+
+subtitle:   "[Python] Conda 설치 방법 "
+
+categories: python
+
+tags: conda install python zsh
+
+comments: true
+
+img: 
+
+
+---
+
 #### Anaconda  Install ( Ubuntu18.04)
 
 1. Download 
