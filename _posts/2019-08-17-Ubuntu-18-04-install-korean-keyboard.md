@@ -1,8 +1,19 @@
 ---
 layout: post
-title: 우분투(Ubuntu) 18.04 한글 키보드 설치
-category: Linux
-tag: [리눅스 설정, Ubuntu]
+
+title:  "[Linux] Ubuntu 한글셋팅 방법 "
+
+subtitle:   "[Linux] Ubuntu 한글셋팅 방법"
+
+categories: linux
+
+tags: linux ubuntu 한글
+
+comments: true
+
+img: 
+
+
 ---
 # iBus 기반 한글 키보드 설치
 
@@ -50,6 +61,8 @@ sudo apt install uim
 
 
 #### 출처
-
+```
 https://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/
+```
+
 
