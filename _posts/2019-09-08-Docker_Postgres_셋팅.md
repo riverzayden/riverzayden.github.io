@@ -1,4 +1,3 @@
-
 ---
 layout: post
 
@@ -13,8 +12,6 @@ tags: docker ubuntu18.04 Postgres
 comments: true
 
 img: 
-
-
 ---
 
 

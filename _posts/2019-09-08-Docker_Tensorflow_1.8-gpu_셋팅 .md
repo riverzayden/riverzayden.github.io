@@ -1,4 +1,3 @@
-
 ---
 layout: post
 
@@ -13,7 +12,6 @@ tags: docker ubuntu18.04 tensorflow1.8 gpu
 comments: true
 
 img: 
-
 
 ---
 
