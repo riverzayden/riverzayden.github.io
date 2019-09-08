@@ -25,6 +25,10 @@
       url: /paper
       desc: Related Paper Review
     -
+      title: Linux
+      url: /linux
+      desc: linux collect
+    -
       title: ETC
       url: /etc
       desc: etc
