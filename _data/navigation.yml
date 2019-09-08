@@ -9,9 +9,13 @@
       url: /python
       desc: Related python 
     -
-      title: Image Deep Learning 
-      url: /image_dl
-      desc: Related Image Deep Learning 
+      title: R
+      url: /r
+      desc: Related R 
+    -
+      title: Deep Learning 
+      url: /dl
+      desc: Related Deep Learning 
     -
       title: NLP Deep Learning
       url: /nlp_dl

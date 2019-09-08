@@ -6,7 +6,7 @@ title:  "[Deep Learning]  Image Study List "
 
 subtitle:   "[Deep Learning]  Image Study List "
 
-categories: image_dl
+categories: dl
 
 tags: dl plan image classification gan detection segmentation simility
 
