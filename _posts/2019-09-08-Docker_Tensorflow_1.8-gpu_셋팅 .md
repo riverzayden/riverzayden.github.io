@@ -75,3 +75,8 @@ docker pull riverzayden/ailab-yurim:0.1
 
 ```
 
+
+#### 출처
+```html
+https://devyurim.github.io/python/tensorflow/development%20enviroment/docker/2018/05/25/tensorflow-3.html
+```
