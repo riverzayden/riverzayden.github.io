@@ -211,3 +211,5 @@ data
 
 <img width="613" alt="캡처" src="https://user-images.githubusercontent.com/49559408/68122164-13b98200-ff4d-11e9-983d-1218c3eb7627.PNG">
 
+
+## https://rpubs.com/aaronsc32/games-howell-test
